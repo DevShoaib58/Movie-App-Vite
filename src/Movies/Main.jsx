@@ -38,10 +38,10 @@ const Main = () => {
                 movies?.length > 0 ? (<div className="card-conatine-movies">
                     {movies.map((e, index) => {
                         return (
-                            <>
+                            <div className="m-2 inline-flex">
                                 <Movie key={index} e={e} />
                                 {console.table(e)}
-                            </>
+                            </div>
                         );
                     })}
                 </div>) : (<h1 className="text-2xl ">Movies not Found</h1>)

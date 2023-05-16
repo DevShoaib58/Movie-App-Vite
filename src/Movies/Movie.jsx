@@ -2,8 +2,8 @@
 const Movie = ({ e }) => {
     return (
         <div className="MyCard">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div className="block flex-row w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="">
+                <div className="flex-row w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         {/* <img className="p-8 rounded-t-lg" src={e.Poster} alt="product image" /> */}
                         <img className="p-8 rounded-t-lg" src={e.Poster !== 'N/A' ? e.Poster : "https://via.placeholder.com/400"} alt="product image" />
