@@ -3,7 +3,7 @@ import Shop from "./Shop";
 const Home = () => {
     return (
         <div className="container m-auto">
-            <h1>Home Page</h1>
+            <h1>Ecommerce Store</h1>
             <Shop />
         </div>
     );

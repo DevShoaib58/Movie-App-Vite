@@ -34,8 +34,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <ul className="container m-auto p-4 flex">
-                <li className="m-4"><Link to="/"  >Home</Link></li>
-                <li className="m-4"><Link to="/cart"  >Cart</Link></li>
+                <li className="m-4"><Link to="/"  >Ecommerce Store</Link></li>
+                <li className="m-4"><Link to="/cart"  >Passing Data Through Props</Link></li>
                 <li className="m-4"><Link to="/main"  >Movies</Link></li>
             </ul>
             <Routes>
