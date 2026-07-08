@@ -6,7 +6,14 @@ const Movie = ({ e }) => {
                 <div className="flex-row w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="#">
                         {/* <img className="p-8 rounded-t-lg" src={e.Poster} alt="product image" /> */}
-                        <img className="p-8 rounded-t-lg" src={e.Poster !== 'N/A' ? e.Poster : "https://via.placeholder.com/400"} alt="product image" />
+                        <img
+                            className="p-8 rounded-t-lg"
+                            src={e.Poster && e.Poster !== 'N/A' ? e.Poster : "https://placehold.co/600x400"}
+                            alt="Movie Poster Not Found"
+                            onError={(event) => {
+                                event.currentTarget.src = "https://placehold.co/600x400";
+                            }}
+                        />
                     </a>
                     <div className="px-5 pb-5">
                         <a href="#">
